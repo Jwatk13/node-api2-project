@@ -12,3 +12,5 @@ server.use('/api/posts', postsRouter);
 
 
 module.exports = server;
+
+//COMPLETED//
