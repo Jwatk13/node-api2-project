@@ -63,8 +63,8 @@ router.put('/:id', (req, res) => {
             return Posts.update(req.params.id, req.body)
         }
       })
-      .then(data => {
-        if (data) {
+      .then(count => {
+        if (count) {
             return Posts.findById(req.params.id)
         }
       })
@@ -110,3 +110,5 @@ router.get('/:id/comments', (req, res) => {
 
 
 module.exports = router;
+
+//Learned to use async await methods with try catch
